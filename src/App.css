@@ -1,0 +1,39 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #000000;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+/* style rc-slider */
+.rc-slider-rail {
+  background-color: #E5E7EB; /* Tailwind gray-200 */
+}
+
+.rc-slider-track {
+  background-color: #f05d19; /* Tailwind blue-500 */
+}
+
+.rc-slider-handle {
+  border-color: #f05d19; /* Tailwind blue-500 */
+}
+
+.rc-slider-handle:focus, .rc-slider-handle:active, .rc-slider-handle:hover {
+  border-color: #f05d19; /* Tailwind blue-600 */
+}
